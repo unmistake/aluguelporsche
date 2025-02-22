@@ -143,32 +143,6 @@
 	</script>
 
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16873853092"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-16873853092');
-</script>
-
-<!-- Event snippet for Adicionar ao carrinho conversion page -->
-<script>
-	gtag('event', 'conversion', {'send_to': 'AW-16873853092/rvLjCOO88J0aEKShiu4-'});
-  </script>
-  
-	<script>
-		(function (w, d, s, l, i) {
-			w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0],
-				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-		})
-			(window, document, 'script', 'aeDataLayer', 'GTM-WGK34W9');
-	</script>
-
-	<script>
-		aeDataLayer.push({ "aeAffiliateName": "AUTOEUROPE", "aeCustomerFullName": "", "aeRentalCost": 0.0, "aeSiteLanguageCode": "pt-BR", "cjEvent": "", "aeSiteCurrency": "BRL", "aeIsLiveSite": true, "payment_fee": "", "occurred_at": "", "aeRentalType": "", "aeSupplierName": "", "criteoItemDataBasketPage": [{ "price": "0.00", "quantity": 1, "id": "-" }], "aeDoCountryCode": "", "aeIsTravelPartner": false, "aeIsLuxury": false, "aeQuoteId": "", "aeVoucherNumber": "", "aeCarCompany": "", "aeSippCode": "", "aeCarModel": "", "aeDoLocId": 0, "aeDoTime": "07:13", "aeDoDateTime": "February, 11 2025 07:13:22", "aeCustomerCountryCode": "", "aeIsConversion": false, "criteoHashedEmail": "D41D8CD98F00B204E9800998ECF8427E", "aeIsWhiteLabel": false, "aePuLocId": 0, "aeAddOns": [""], "aeIsPaidBooking": false, "aePuCountryCode": "", "aeSiteCode": "BRA", "aePuDate": "02/11/2025", "aePuDateTime": "February, 11 2025 07:13:22", "aeDoDate": "02/11/2025", "criteoItemDataSalesConfirmationPage": [{ "price": "0.00", "quantity": 1, "id": "-" }], "aeTransmissionType": "", "aePuTime": "07:13", "criteoItemDataProductPage": "-", "stage": "", "aeCustomerPhone": "D41D8CD98F00B204E9800998ECF8427E", "skyscanner_redirectid": "", "aeCarPrice": "", "aePUType": "", "aeDoCityName": "", "googleOptOut": false, "aeIsLongTermRental": false, "aeCarSize": "", "aePuCityName": "", "aeCarName": "" });
-	</script>
 
 
 
@@ -232,17 +206,32 @@
 	data-offset="50" itemscope="" itemtype="https://schema.org/WebPage">
 
 
+	  <!-- Global Site Tag (gtag.js) - Google Ads -->
+	  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16873853092"></script>
+	  <script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		
+		// Configuração do Google Ads
+		gtag('config', 'AW-16873853092');
+	  </script>
+	
+	  <script>
+		// Event listener para o clique no botão "Consultar"
+		document.getElementById('btn-consultar').addEventListener('click', function() {
+		  // Event Snippet para rastrear a conversão (envio de lead para WhatsApp)
+		  gtag('event', 'conversion', {
+			'send_to': 'AW-16873853092/aUqNCOPw4KEaEKShiu4-'
+		  });
+		});
+	  </script>
+
+	
 
 
 
 
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4VPCS5&aeSiteCode=BRA&aeIsConversion=false"
-			height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-
-
-
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGK34W9&aeSiteCode=BRA&aeIsConversion=false"
-			height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
@@ -2826,7 +2815,7 @@
 											</div><!--
 			 -->
 											<div class="grid__item one-half palm-one-whole grid__item-form-submit">
-												<button class="btn--primary" type="button" name="btn-submit"
+												<button class="btn--primary" type="button" name="btn-submit" id="btn-consultar"
 													tabindex="0">
 													CONSULTAR
 												</button>
